@@ -11,7 +11,7 @@ const Banners = () => {
                     <Link to={"/category/tops"}><img src={bannerTop} alt="banner para superiores" className="img-fluid"/></Link>
                 </div>
                 <div className="col text-center">
-                    <Link to={"/category/bottom"}><img src={bannerBottom} alt="banner para prendas inferiores" className="img-fluid"/></Link>
+                    <Link to={"/category/buttoms"}><img src={bannerBottom} alt="banner para prendas inferiores" className="img-fluid"/></Link>
                 </div>
                 <div className="col text-center">
                     <Link to={"/category/accesories"}><img src={bannerAces} alt="banner para accesorios" className="img-fluid"/></Link>

@@ -1,6 +1,6 @@
 import './App.css'
 import ItemListContainer from './components/ItemListContainer'
-import ItemDetailListContainer from './components/ItemDetailListContainer'
+import ItemDetailContainer from './components/ItemDetailContainer'
 import NavBar from './components/NavBar'
 import Banners from './components/Banners'
 import Footer from './components/Footer'
@@ -13,8 +13,8 @@ function App() {
         <NavBar />
         <Routes>
           <Route path={"/"} element={<ItemListContainer />}/>
-          <Route path={"/category:id"} element={<ItemListContainer />}/>
-          <Route path={"/item:id"} element={<ItemDetailListContainer />}/>
+          <Route path={"/category/:id"} element={<ItemListContainer />}/>
+          <Route path={"/item/:id"} element={<ItemDetailContainer />}/>
           <Route path={"*"} element={<Error404 />}/>
         </Routes>
         <Banners />

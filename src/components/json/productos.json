@@ -1,11 +1,11 @@
 [
     {
-        "id":1, "nombre":"Remera Kanye Boxy Plain Acid Black", "precio": 41250, "descripcion": "El mide 1'86 y usa talle L. Ella mide 1'72 y usa talle S. COMPOSICIÓN: 100% algodón. CUIDADOS: Lavar con agua fria. No usar cloro.", "imagen": "https://harveywillys.vtexassets.com/arquivos/ids/160125/Harvey2341.jpg?v=638452470824670000", "stock": 10, "categoria": "ropa" 
+        "id":1, "nombre":"Remera Kanye Boxy Plain Acid Black", "precio":41250, "descripcion":"El mide 1'86 y usa talle L. Ella mide 1'72 y usa talle S. COMPOSICIÓN: 100% algodón. CUIDADOS: Lavar con agua fria. No usar cloro.", "imagen":"https://harveywillys.vtexassets.com/arquivos/ids/160125/Harvey2341.jpg?v=638452470824670000", "stock":10, "categoria":"tops" 
     },
     {
-        "id":2, "nombre":"Jean Chester Vanilla Sky", "precio": 79000, "descripcion": "El mide 1'85 y usa talle 42. Ella mide 1'70 y usa talle 38. COMPOSICIÓN: 100% algodón. CUIDADOS: Lavar con agua fría. No usar cloro.", "imagen": "https://harveywillys.vtexassets.com/arquivos/ids/160237/Harvey9961.jpg?v=638455073009230000", "stock": 10, "categoria": "ropa" 
+        "id":2, "nombre":"Jean Chester Vanilla Sky", "precio":79000, "descripcion":"El mide 1'85 y usa talle 42. Ella mide 1'70 y usa talle 38. COMPOSICIÓN: 100% algodón. CUIDADOS: Lavar con agua fría. No usar cloro.", "imagen":"https://harveywillys.vtexassets.com/arquivos/ids/160237/Harvey9961.jpg?v=638455073009230000", "stock":10, "categoria":"buttoms" 
     },
     {
-        "id":3, "nombre":"Gafas Sg Yellow", "precio": 105000, "descripcion": "Material: Acetato Italiano espesor 6MM Mazzucchelli 1849. Nro. de pieza y logotipo grabados a laser. Bisagras rígidas Protección UV. Packaging: Estuche de cuero de primera calidad de curtido vegetal. Paño de limpieza en microfibra. Medidas: Frente: 14,7 cm Alto: 3,9 cm Ojos: 5,2 cm Puente: 2,8 cm. Stock ilimitado.", "imagen": "https://harveywillys.vtexassets.com/arquivos/ids/157900/Harver0464x6.jpg?v=638273624079530000", "stock": 10, "categoria": "accesorio" 
+        "id":3, "nombre":"Gafas Sg Yellow", "precio":105000, "descripcion":"Material: Acetato Italiano espesor 6MM Mazzucchelli 1849. Nro. de pieza y logotipo grabados a laser. Bisagras rígidas Protección UV. Packaging: Estuche de cuero de primera calidad de curtido vegetal. Paño de limpieza en microfibra. Medidas: Frente: 14,7 cm Alto: 3,9 cm Ojos: 5,2 cm Puente: 2,8 cm. Stock ilimitado.", "imagen":"https://harveywillys.vtexassets.com/arquivos/ids/157900/Harver0464x6.jpg?v=638273624079530000", "stock":10, "categoria":"accesories" 
     }
 ]

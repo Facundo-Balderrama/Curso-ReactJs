@@ -26,7 +26,7 @@ const NavBar = () => {
                         <NavLink className="nav-link text-dark" to={"/category/tops"}>Tops</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link text-dark" to={"/category/bottoms"}>Bottoms</NavLink>
+                        <NavLink className="nav-link text-dark" to={"/category/buttoms"}>Buttoms</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink className="nav-link text-dark" to={"/category/accesories"}>Accesories</NavLink>
