@@ -1,29 +1,33 @@
 import { useEffect, useState } from "react";
-import arrayProductos from "./json/productos.json";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
+import { collection, getDocs, getFirestore, query, where} from "firebase/firestore";
+import Loading from "./Loading";
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([]);
+    const [visible, setVisible] = useState(true);
     const {id} = useParams();
 
-    useEffect(() => {
-        const promesa = new Promise(resolve => {
-            setTimeout(() => {
-                resolve(id ? arrayProductos.filter(item => item.categoria == id) : arrayProductos);
-            }, 2000);
-        });
 
-        promesa.then(respuesta => {
-            setItems(respuesta);
-        })
-    }, [id])
+    //Acceder a una collection en firestore mediante una query
+    useEffect(() => {
+        const db = getFirestore();
+        const itemsCollection = collection(db, "items");
+        const queryCollection = id ? query(itemsCollection, where("categoria", "==", id)) : itemsCollection;
+        getDocs(queryCollection).then(snapShot => {
+            if (snapShot.size > 0) {
+                setItems(snapShot.docs.map(item => ({id:item.id, ...item.data()}))); 
+                setVisible(false); 
+            }
+        });
+    }, [id]);
 
     return (
         <div className="container-fluid py-5">
             <div className="row">
                     {/*<img src={"img/banner.png"} alt="banner de la marca" className="img-fluid" width={2000}/>*/}
-                    <ItemList items = {items}/>
+                    {visible ? <Loading /> : <ItemList items = {items}/>}
             </div>
         </div>
     )
